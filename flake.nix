@@ -7,7 +7,7 @@
 		system = "x86_64-linux";
 		pkgs = import nixpkgs { inherit system; };
 	in {
-		devShells.${system}.nodejs = pkgs.mkShell {
+		devShells.${system}.web = pkgs.mkShell {
 			packages = [
 				pkgs.nodejs_latest
 				pkgs.fish
