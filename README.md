@@ -1,12 +1,10 @@
-# Nix development shells
+# ❄️ nix-dev ❄️
 
-## Usage
-
-### Web development
+## Web development
 
 The web development environment includes Nix packages for:
 
-- Node.js
+- Node.js (latest)
 - The friendly interactive shell
 
 ```shell
