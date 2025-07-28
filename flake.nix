@@ -16,6 +16,14 @@
 				exec fish
 			'';
 		};
+		devShells.${system}.powershell = pkgs.mkShell {
+			packages = [
+				pkgs.powershell
+			];
+			shellHook = ''
+				exec powershell
+			'';
+		};
 	};
 }
 

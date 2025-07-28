@@ -2,11 +2,29 @@
 
 ## Web development
 
+### Packages
+
+- Node.js (latest)
+- The friendly interactive shell
+
+
+```shell
+nix develop .#web
+```
+
+---
+
+## Powershell
+
+### Packages
+
 The web development environment includes Nix packages for:
 
 - Node.js (latest)
 - The friendly interactive shell
 
 ```shell
-nix develop .#web
+nix develop .#powershell
 ```
+
+---
