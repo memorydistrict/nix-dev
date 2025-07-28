@@ -20,8 +20,7 @@ nix develop .#web
 
 The web development environment includes Nix packages for:
 
-- Node.js (latest)
-- The friendly interactive shell
+- Powershell
 
 ```shell
 nix develop .#powershell
