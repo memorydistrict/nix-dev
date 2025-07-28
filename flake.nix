@@ -7,22 +7,24 @@
 		system = "x86_64-linux";
 		pkgs = import nixpkgs { inherit system; };
 	in {
-		devShells.${system}.web = pkgs.mkShell {
-			packages = [
-				pkgs.nodejs_latest
-				pkgs.fish
-			];
-			shellHook = ''
-				exec fish
-			'';
-		};
-		devShells.${system}.powershell = pkgs.mkShell {
-			packages = [
-				pkgs.powershell
-			];
-			shellHook = ''
-				exec powershell
-			'';
+		devShells.${system} = {
+			web = pkgs.mkShell {
+				packages = [
+					pkgs.nodejs_latest
+					pkgs.fish
+				];
+				shellHook = ''
+					exec fish
+				'';
+			};
+			powershell = pkgs.mkShell {
+				packages = [
+					pkgs.powershell
+				];
+				shellHook = ''
+					exec pwsh
+				'';
+			};
 		};
 	};
 }
